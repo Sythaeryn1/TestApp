@@ -96,7 +96,7 @@ namespace TestApp
 
         public static int Nine()
         {
-            return Seven() + 1;
+            return Seven() + 2;
         }
     }
 }
