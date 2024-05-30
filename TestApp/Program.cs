@@ -82,7 +82,8 @@ namespace TestApp
 
         public static int Seven()
         {
-            return 6;
+            return 6 + 1;
         }
+
     }
 }
