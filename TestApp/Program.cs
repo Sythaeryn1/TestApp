@@ -15,6 +15,10 @@ namespace TestApp
             int answer = FirstFeature();
             Console.WriteLine($"Answer of the first feature: {answer}");
 
+            answer = SecondFeature(answer);
+
+            Console.WriteLine($"Answer of the second feature: {answer}");
+
             Console.ReadLine();
         }
 
@@ -27,6 +31,13 @@ namespace TestApp
 
 
             return a + b;
+        }
+
+        public static int SecondFeature(int answerFirstFeature)
+        {
+            int divider = 3;
+
+            return answerFirstFeature / divider;
         }
     }
 }
