@@ -33,6 +33,8 @@ namespace TestApp
 
             Console.WriteLine($"Answer: {Seven()}");
 
+            Console.WriteLine($"{Eight()}");
+
             Console.ReadLine();
         }
 
@@ -85,5 +87,9 @@ namespace TestApp
             return 6 + 1;
         }
 
+        public static int Eight()
+        {
+            return Seven() + 1;
+        }
     }
 }
