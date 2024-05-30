@@ -19,6 +19,10 @@ namespace TestApp
 
             Console.WriteLine($"Answer of the second feature: {answer}");
 
+            double ans = ThirdFeature();
+
+            Console.WriteLine($"Answer 3: {ans}");
+
             Console.ReadLine();
         }
 
@@ -38,6 +42,16 @@ namespace TestApp
             int divider = 3;
 
             return answerFirstFeature / divider;
+        }
+
+        public static double ThirdFeature()
+        {
+            int a = 2;
+            int b = 7;
+
+            double c = Convert.ToDouble(a);
+
+            return Convert.ToDouble(b / c);
         }
     }
 }
