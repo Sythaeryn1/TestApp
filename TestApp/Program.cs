@@ -27,6 +27,10 @@ namespace TestApp
 
             Console.WriteLine($"Answer 4: {a}");
 
+            int b = Fifth();
+
+            Console.WriteLine($"Answer 5: {b}");
+
             Console.ReadLine();
         }
 
@@ -62,6 +66,14 @@ namespace TestApp
         {
             double b = a / ThirdFeature();
             return Convert.ToInt32(b);
+        }
+
+        public static int Fifth()
+        {
+            double a = ThirdFeature();
+            int b = FourthFeature(a);
+
+            return b * 100;
         }
     }
 }
