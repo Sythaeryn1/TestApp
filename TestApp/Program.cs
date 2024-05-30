@@ -31,6 +31,8 @@ namespace TestApp
 
             Console.WriteLine($"Answer 5: {b}");
 
+            Console.WriteLine($"Answer: {Seven()}");
+
             Console.ReadLine();
         }
 
@@ -76,6 +78,11 @@ namespace TestApp
             b += 23;
 
             return b * 100;
+        }
+
+        public static int Seven()
+        {
+            return 6;
         }
     }
 }
