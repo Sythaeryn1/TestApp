@@ -37,6 +37,8 @@ namespace TestApp
 
             Console.WriteLine($"{Nine()}");
 
+            Console.WriteLine($"{Ten()}");
+
             Console.ReadLine();
         }
 
@@ -97,6 +99,11 @@ namespace TestApp
         public static int Nine()
         {
             return Seven() + 2;
+        }
+
+        public static int Ten()
+        {
+            return Nine() + 1;
         }
     }
 }
