@@ -31,6 +31,10 @@ namespace TestApp
 
             Console.WriteLine($"Answer 5: {b}");
 
+            int c = Six();
+
+            Console.WriteLine($"That's what I mean: {c}");
+
             Console.ReadLine();
         }
 
@@ -76,6 +80,17 @@ namespace TestApp
             b += 23;
 
             return b * 100;
+        }
+
+        public static int Six()
+        {
+            int a = Fifth();
+
+            Console.WriteLine($"Let's go big: {a}");
+
+            Console.WriteLine("BIGGER!!");
+
+            return a * 1000;
         }
     }
 }
