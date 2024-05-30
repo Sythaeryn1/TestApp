@@ -6,11 +6,27 @@ using System.Threading.Tasks;
 
 namespace TestApp
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Init");
+
+            int answer = FirstFeature();
+            Console.WriteLine($"Answer of the first feature: {answer}");
+
+            Console.ReadLine();
+        }
+
+        public static int FirstFeature()
+        {
+            Console.WriteLine("This is a new feature");
+
+            int a = 7;
+            int b = 8;
+
+
+            return a + b;
         }
     }
 }
