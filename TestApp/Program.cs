@@ -73,6 +73,8 @@ namespace TestApp
             double a = ThirdFeature();
             int b = FourthFeature(a);
 
+            b += 23;
+
             return b * 100;
         }
     }
